@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سایت من</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Tahoma,Arial,sans-serif;
+    background:#06101d;
+    color:white;
+    line-height:1.8;
+}
+
+/* منو */
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(3,10,20,.95);
+    padding:12px 6%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:1px solid #12304d;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.logo-icon{
+    width:45px;
+    height:45px;
+    border-radius:12px;
+    background:#00aaff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:25px;
+    font-weight:bold;
+    box-shadow:0 0 20px rgba(0,170,255,.5);
+}
+
+.menu{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#00aaff;
+}
+
+/* صفحه اصلی */
+.hero{
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,10,25,.8)),
+    url("hero.jpg") center/cover no-repeat;
+}
+
+.hero-content{
+    max-width:800px;
+    padding:30px;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:19px;
+    color:#d4e8f5;
+    margin-bottom:30px;
+}
+
+.button{
+    display:inline-block;
+    background:#00aaff;
+    color:white;
+    padding:12px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.button:hover{
+    background:#0088cc;
+}
+
+/* بخش‌ها */
+section{
+    padding:70px 7%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.title h2{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.title p{
+    color:#a9c4d8;
+}
+
+/* کارت‌ها */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:#0b1c2d;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    border:1px solid #163650;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#00aaff;
+}
+
+.card-icon{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#abc2d3;
+}
+
+/* درباره ما */
+.about{
+    background:#081725;
+}
+
+.about-content{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.about-content p{
+    color:#c4d7e5;
+    font-size:18px;
+}
+
+/* تماس */
+.contact{
+    text-align:center;
+}
+
+.contact-box{
+    max-width:600px;
+    margin:auto;
+    background:#0b1c2d;
+    padding:35px;
+    border-radius:20px;
+    border:1px solid #163650;
+}
+
+.contact-box p{
+    margin:12px 0;
+    color:#c4d7e5;
+}
+
+/* پایین سایت */
+footer{
+    text-align:center;
+    padding:25px;
+    background:#030b14;
+    color:#8da8ba;
+}
+
+/* موبایل */
+@media(max-width:700px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .menu{
+        gap:12px;
+        font-size:14px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        min-height:70vh;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:50px 5%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        <div class="logo-icon">M</div>
+        <span>سایت من</span>
+    </div>
+
+    <ul class="menu">
+        <li><a href="#home
